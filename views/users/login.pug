@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 Log In
+  a(href="/users/signup") Sign Up
+  form(action='/users/login' method='POST')
+    p Username:
+      input(type='text', name='username', value=valueID)
+    p Password:
+      input(type='password', name='password', value=valueID)
+    p
+      input(type='submit' value='Submit')

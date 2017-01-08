@@ -1,0 +1,7 @@
+.env
+/public/javascripts/
+/public/stylesheets/
+/node_modules/
+/devdb/
+/app/
+/test/

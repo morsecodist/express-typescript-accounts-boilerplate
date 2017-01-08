@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+  h1=username
+  form(action='/users/logout' method='POST')
+    p
+      input(type='submit' value='Logout')
+  form(action='/users/update' method='POST')
+    p Username:
+      input(type='text', name='username', value=valueID)
+    p Email:
+      input(type='text', name='email', value=valueID)
+    p Password:
+      input(type='password', name='password', value=valueID)
+    p
+      input(type='submit' value='Update')
+  form(action='/users/delete' method='POST')
+    p
+      input(type='submit' value='Delete Account')
